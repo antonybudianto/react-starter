@@ -1,10 +1,12 @@
 import React from 'react';
-import Todo from './todo';
+import VisibleTodolist from './todos/todolist.container';
+import AddTodo from './todos/addtodo.container';
 
-const App = ({ name }) => (
+const App = (props) => (
     <div>
-        <p> Hello React by {name}!</p>
-        <Todo />
+        <p> Hello React!</p>
+        <AddTodo />
+        <VisibleTodolist />
     </div>
 );
 
