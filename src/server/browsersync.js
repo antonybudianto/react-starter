@@ -4,12 +4,12 @@ var bs = require("browser-sync").create();
 // .init starts the server
 bs.init({
     server: {
-        baseDir: './src/client'
+        baseDir: './src/client/public'
     },
     files: [
-        "src/client/index.html",
+        "src/client/public/index.html",
         "src/client/public/bundle.js",
-        "src/client/*.css"
+        "src/client/public/css/*.css"
     ]
 });
 

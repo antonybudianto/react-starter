@@ -10,6 +10,16 @@ export default function todos(state = [], action) {
                     text: action.text
                 }
             ];
+        case ACTION_TYPES.TOGGLE_TODO:
+            return state.map(todo => {
+                if (todo.id === action.id) {
+                    return Object.assign({}, todo, {
+                        completed: !todo.completed
+                    });
+                }
+
+                return todo;
+            })
         default:
             return state;
     }
