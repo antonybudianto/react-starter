@@ -1,6 +1,6 @@
 {
   "name": "react-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "All in one React Starter",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "author": "Antony Budianto <antonybudianto@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "react": "^0.15.0",
-    "react-dom": "^0.15.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1"
   },
