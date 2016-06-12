@@ -7,13 +7,15 @@ import App from './app';
 
 let store = createStore(mainApp);
 
-store.subscribe(() => {
-    console.log(store.getState());
-});
+if (process.env.NODE_ENV === 'development') {
+    store.subscribe(() => {
+        console.log(store.getState());
+    });
+}
 
 render(
-    <Provider store={store}>
+     <Provider store={store}>
         <App />
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('react-root')
 );

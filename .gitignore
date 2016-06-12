@@ -1,5 +1,4 @@
 /node_modules
-/src/client/public/*.js
-/src/client/public/*.js.map
+/build
 *.js.map
 .DS_Store
