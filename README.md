@@ -20,7 +20,7 @@ npm start
 Enjoy coding React!
 
 
-## Build
+## Production
 You can build production bundle and serve it by running
 ```
 npm run serve-build
