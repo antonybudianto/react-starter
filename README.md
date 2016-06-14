@@ -1,24 +1,30 @@
 # React Starter
 
-Welcome to React Starter
+Minimal React Starter with Hot reload
 
 ## Installation
-Firstly, you need to have [Node.js](https://nodejs.org/en/)    
+Firstly, you need to have [Node.js](https://nodejs.org/en/)
+> Node 5 or later is **recommended**
+
 After that, run:
 ```
 npm install
 ```
 
 ## Start
-First, start webpack watch with Babel loader
+First, start webpack watch with Babel loader by running
 ```
 npm start
 ```
-then, run local server
-```
-npm run bs
-```
+
 Enjoy coding React!
+
+
+## Production
+You can build production bundle and serve it by running
+```
+npm run serve-build
+```
 
 ## License
 MIT

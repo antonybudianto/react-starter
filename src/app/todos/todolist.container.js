@@ -8,15 +8,11 @@ const mapState = (state) => {
     };
 };
 
-const mapDispatch = (dispatch) => {
-    return {
-        onTodoClick: (id) => dispatch(toggleTodo({ id }))
-    };
-};
-
 const VisibleTodolist = connect(
     mapState,
-    mapDispatch
+    {
+        onTodoClick: toggleTodo
+    }
 )(Todolist);
 
 export default VisibleTodolist;
