@@ -2,6 +2,8 @@
 
 Minimal React Starter with Hot reload
 
+[![Build Status](https://travis-ci.org/antonybudianto/react-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/react-starter)
+
 ## Installation
 Firstly, you need to have [Node.js](https://nodejs.org/en/)
 > Node 5 or later is **recommended**
