@@ -6,10 +6,17 @@ body {
     display: inline-block;
     width: auto;
     margin: 10px;
-    background-color: yellow;
+    background-color: yellowgreen;
     padding: 20px;
+    cursor: pointer;
 }
 
 .todo:hover {
     box-shadow: 0 0 5px gray;
+}
+
+.todo.completed {
+    color: white;
+    background-color: green;
+    text-decoration: line-through;
 }
