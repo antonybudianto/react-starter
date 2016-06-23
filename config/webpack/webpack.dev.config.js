@@ -28,6 +28,10 @@ var config = {
               exclude: /node_modules/,
               include: SRC_DIR,
               loaders: ['react-hot', 'babel']
+          },
+          {
+              test: /\.scss$/,
+              loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
           }
       ]
   },

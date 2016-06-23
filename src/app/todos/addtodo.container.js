@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from './todos.actions';
 
+let index = 0;
 let AddTodo = ({ dispatch }) => {
     let input;
-    let index = 0;
 
     return (
         <div>
