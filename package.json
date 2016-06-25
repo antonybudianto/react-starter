@@ -1,6 +1,6 @@
 {
   "name": "react-starter",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "All in one React Starter",
   "main": "main.js",
   "repository": {
@@ -11,6 +11,7 @@
     "start": "node .",
     "serve-dev": "node config/browsersync/browsersync.dev.js",
     "serve-build": "npm run build-prod && node config/browsersync/browsersync.prod.js",
+    "lint": "eslint src",
     "watch": "npm run build-dev -- --watch",
     "build-dev": "webpack -d --config config/webpack/webpack.dev.config.js",
     "build-prod": "webpack -p --config config/webpack/webpack.prod.config.js",
@@ -26,10 +27,14 @@
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.9.1",
+    "babel-eslint": "^6.1.0",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
+    "eslint": "^2.13.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.2.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.21.0",
     "node-sass": "^3.8.0",
