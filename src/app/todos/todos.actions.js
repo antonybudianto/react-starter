@@ -9,3 +9,8 @@ export const toggleTodo = ({ id }) => ({
     type: ACTION_TYPES.TOGGLE_TODO,
     id
 });
+
+export const changeFilter = ({ target }) => ({
+    completed: target.checked,
+    type: ACTION_TYPES.FILTER_TODO
+});

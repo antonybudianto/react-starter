@@ -7,7 +7,8 @@ export default function todos(state = [], action) {
                 ...state,
                 {
                     id: action.id,
-                    text: action.text
+                    text: action.text,
+                    completed: false
                 }
             ];
         case ACTION_TYPES.TOGGLE_TODO:

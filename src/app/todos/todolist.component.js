@@ -1,17 +1,28 @@
 import React from 'react';
 import Todo from './todo.component';
 
-const Todolist = ({ todos, onTodoClick }) => (
+const Todolist = ({ todos, showCompleted, onTodoClick, onChangeFilter}) => (
     <div className='todolist'>
+        <label>
+            <input
+                type="checkbox"
+                defaultChecked={showCompleted}
+                onClick={onChangeFilter}
+            /> Show completed
+        </label>
+        <div>
         {
             todos.map(todo =>
-                <Todo onTodoClick={() => onTodoClick(todo)}
+                <Todo
                     key={todo.id}
+                    onTodoClick={() => onTodoClick(todo)}
                     text={todo.text}
-                    completed={todo.completed}>
+                    completed={todo.completed}
+                    >
                 </Todo>
             )
         }
+        </div>
     </div>
 )
 
