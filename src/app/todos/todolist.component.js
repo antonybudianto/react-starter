@@ -1,7 +1,7 @@
 import React from 'react';
 import Todo from './todo.component';
 
-const Todolist = ({ todos, showCompleted, onTodoClick, onChangeFilter}) => (
+const Todolist = ({ allTodos, todos, showCompleted, onTodoClick, onChangeFilter}) => (
     <div className='todolist'>
         <label>
             <input
@@ -22,6 +22,14 @@ const Todolist = ({ todos, showCompleted, onTodoClick, onChangeFilter}) => (
                 </Todo>
             )
         }
+        <div><strong>{todos.length}</strong> current items.
+        <strong> {allTodos.filter((todo) => todo.completed).length}</strong> completed items.
+        { allTodos.length !== todos.length ?
+            <span>
+                <strong> {allTodos.length}</strong> total items.
+            </span> : null
+        }
+        </div>
         </div>
     </div>
 )
