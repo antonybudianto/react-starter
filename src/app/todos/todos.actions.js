@@ -9,3 +9,8 @@ export const toggleTodo = ({ id }) => ({
     type: ACTION_TYPES.TOGGLE_TODO,
     id
 });
+
+export const changeFilter = (completed) => ({
+    completed,
+    type: ACTION_TYPES.FILTER_TODO
+});
