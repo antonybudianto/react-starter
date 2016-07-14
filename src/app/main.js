@@ -14,8 +14,8 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 render(
-     <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('react-root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('react-root')
 );
