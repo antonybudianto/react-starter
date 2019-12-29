@@ -1,1 +1,0 @@
-require('./config/browsersync/browsersync.dev');
